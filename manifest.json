@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "OLX Blocked",
+  "version": "1.0.1",
+  "description": "Custom control over featured and delivery listings on OLX Pakistan.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "OLX Blocked",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.olx.com.pk/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
